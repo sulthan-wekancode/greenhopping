@@ -21,16 +21,15 @@ app.controller('authCtrl', function ($route, $scope, $rootScope, $routeParams, $
     $scope.doRegister = {firstname: '', email: '', password: ''};
      $scope.doRegister = function ()
     {
-        firstname = $scope.signup.firstname;
-        lastname = $scope.signup.lastname;
+        username = $scope.signup.username;
+        
         email = $scope.signup.email;
         password = $scope.signup.password;
         $scope.data.show = false;
         $scope.data.show = true
           $http.post('registerUser', 
           {
-              firstname : firstname,
-              lastname : lastname,
+              username : username,
               email : email,
               password : password
 
@@ -110,8 +109,8 @@ $scope.verifyPass = {password: ''};
             if(results.data.success==1)
             {
                 localStorage.setItem("ghUserId", results.data.userData.id);
-                console.log(results.data.userData.firstname);
-                var name = results.data.userData.firstname+' '+results.data.userData.lastname;
+                console.log(results.data.userData.username);
+                var name = results.data.userData.username;
                 localStorage.setItem("ghUserName", name);
 
                 $location.path('dashboard');   

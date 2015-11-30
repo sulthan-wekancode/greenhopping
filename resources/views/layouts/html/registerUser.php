@@ -14,20 +14,13 @@
 </div>
 </div> 
 <div class="form-group required">
-<label class="col-md-4 control-label">First Name <sup>*</sup></label>
+<label class="col-md-4 control-label">User Name <sup>*</sup></label>
 <div class="col-md-6">
-<input name="firstname" placeholder="First Name" class="form-control input-md" required="" type="text" ng-model="signup.firstname">
-<span class="errorMessage" ng-show="signupForm.firstname.$error.required && !signupForm.firstname.$pristine" class="help-inline">First Name is required.</span>
+<input name="username" placeholder="User Name" class="form-control input-md" required="" type="text" ng-model="signup.username">
+<span class="errorMessage" ng-show="signupForm.username.$error.required && !signupForm.username.$pristine" class="help-inline">First Name is required.</span>
 </div>
 </div>
  
-<div class="form-group required">
-<label class="col-md-4 control-label">Last Name <sup>*</sup></label>
-<div class="col-md-6">
-<input name="lastname" placeholder="Last Name" class="form-control input-md" type="text" ng-model="signup.lastname" required='required'>
-<span class="errorMessage" ng-show="signupForm.lastname.$error.required && !signupForm.lastname.$pristine" class="help-inline">Last Name is required.</span>
-</div>
-</div>
  
 
 <div class="form-group required">

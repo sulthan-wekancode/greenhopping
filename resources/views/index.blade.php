@@ -8,8 +8,7 @@
         <link rel="shotcut icon" type="favicon.ico" href="public/images/favicon.ico" />
         <link rel="icon" type="favicon.ico" href="public/images/favicon.ico" />
         <script src="{{ asset('/').('public/assets/js/jquery-1.9.1.min.js')}}"></script>
-    </head><span id="changePassword">
-    test</span>
+    </head><span id="changePassword"></span>
     <body ng-cloak="">
         <div data-ng-view="" id="ng-view" class="slide-animation"></div>
     </body>
